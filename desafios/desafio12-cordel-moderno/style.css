@@ -18,7 +18,9 @@ font-family: 'Roboto', sans-serif;
     --texto-cordel:'Boogaloo', cursive;
     --texto-normal:'Roboto', sans-serif;
 }
-
+html, body{
+    font-family: var(--texto-normal);
+}
 header{
     background-color: black;
     text-align: center;
@@ -31,7 +33,6 @@ header h1{
     padding-top: 50px;
 }
 header p{
-    font-family: var(--texto-normal);
     font-size: 1em;
     font-weight: 300;
     padding-bottom: 50px;
@@ -45,15 +46,35 @@ header a:hover{
     text-decoration: underline;
 }
 
-main section{
+section{
     padding: 60px 60px;
-}
-main p{
     font-family: var(--texto-cordel);
     font-size: 4vw;
     font-style: italic;
-    margin: 4vw 0;
     line-height: 1.8;
+}
+section p{
+    padding:5px 5px 2em 5px;
+    
+}
+
+.joaninha{
+    background-image: url("imagens/background001.jpg");
+}
+.livro{
+    background-image: url("imagens/background002.jpg") ;
+}
+.caixa-imagem{
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3) inset ;
+}
+.contraste{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;    
 }
 
 footer{
@@ -63,7 +84,6 @@ footer{
     color: white;
 }
 footer p{
-    font-family: var(--texto-normal);
     font-weight: 300;
 }
 footer a{
@@ -73,25 +93,4 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-}
-
-.contraste{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: inline-block;
-}
-.sombra-interna{
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3) inset ;
-}
-.joaninha{
-    background-image: url("imagens/background001.jpg");
-    background-position: right center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.livro{
-    background-image: url("imagens/background002.jpg") ;
-    background-position: left center;
-    background-attachment: fixed;
-    background-size: cover;
 }
