@@ -75,16 +75,9 @@ footer a:hover{
     text-decoration: underline;
 }
 
-.positivo{
-    color: black;
-}
-
-.negativo{
-    color: white;
-    
-}
 .contraste{
     background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     display: inline-block;
 }
 .sombra-interna{
