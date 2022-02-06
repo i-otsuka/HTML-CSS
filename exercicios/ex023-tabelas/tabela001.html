@@ -16,18 +16,38 @@
             border-collapse: collapse;
 
         }
-        td{
+        th, td{
             padding: 5px;
             border: solid 1px gray;
             text-align: center;
-            vertical-align: top;
+        }
+        th{
+            background-color: lightgray;
+            vertical-align: bottom;
+        }
+        td{
+            background-color: white;
+            vertical-align: middle;
         }
 
     </style>
 </head>
 <body>
+    <!-- 
+    HIERARQUIA DE TABELAS
+        TABLE = Tabela
+            TR(Table row) = Linha da tabela
+                TH(Table Header) = Cabeçalho da tabela
+                TD(Table Data) = Dados da tabela
+    
+    -->
     <h1>Primeira Tabela</h1>
     <table>
+        <tr>
+            <th>Coluna A</th>
+            <th>Coluna B</th>
+            <th>Coluna C</th>
+        </tr>
         <tr class="linha">
             <td>A1</td>
             <td>B1</td>
